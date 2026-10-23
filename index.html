@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kid Adam Studios</title><meta name="description" content="Kid Adam Studios is an independent game studio. Our first game, Blackout Murder, is a Victorian whodunit you solve with logic."><link rel="icon" href="kidadam-logo.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@400;500&display=swap"><style>
+:root{--bg:#000;--panel:#15110d;--ink:#f1e6cf;--muted:#b9a684;--gold:#e0b25a;--gold2:#c4913c;--line:#3a2c1a;--wine:#9c1d25;
+--display:"Cinzel",Georgia,"Times New Roman",serif;--body:"EB Garamond",Georgia,"Times New Roman",serif;--ui:"Jost",system-ui,sans-serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.6}
+a{color:var(--gold)}a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.top{border-bottom:1px solid var(--line);background:#000}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:700;letter-spacing:.08em;font-size:17px}
+.brand img{width:42px;height:42px;border-radius:8px}
+.nav{display:flex;gap:18px;font-family:var(--ui);font-size:15px}.nav a{color:var(--muted);text-decoration:none}.nav a:hover{color:var(--gold)}
+.foot{border-top:1px solid var(--line);color:var(--muted);font-family:var(--ui);font-size:14px;padding:28px 0 40px;margin-top:64px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;font-family:var(--ui);font-weight:500;font-size:17px;text-decoration:none;padding:14px 26px;border-radius:999px}
+.btn.gold{background:linear-gradient(#f0c674,#d39a3e);color:#2a1608;box-shadow:0 0 0 1px #ffe2a8 inset}
+.btn.ghost{border:1px solid var(--gold2);color:var(--gold)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.03em;line-height:1.2;text-wrap:balance}
+</style>
+<style>
+.hero{text-align:center;padding:56px 0 40px}
+.hero img{width:min(360px,72vw);height:auto;display:block;margin:0 auto}
+.hero p{color:var(--muted);font-size:21px;max-width:34em;margin:18px auto 0;font-style:italic}
+.game{position:relative;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel)}
+.game .bgimg{position:absolute;inset:0;background:url(blackout-manor.jpg) center/cover;opacity:.32}
+.game .bgimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.2),rgba(11,9,7,.95) 75%)}
+.game .in{position:relative;padding:40px clamp(20px,5vw,56px) 44px}
+.gl{width:min(420px,80vw);height:auto;display:block;margin:0 auto 6px}
+.tag{text-align:center;font-family:var(--display);color:var(--gold);letter-spacing:.14em;font-size:14px;margin:0 0 22px}
+.lead{text-align:center;font-size:22px;max-width:30em;margin:0 auto 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:34px}
+.cta img{width:28px;height:28px;border-radius:6px}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.shots img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.feats h3{font-size:16px;color:var(--gold);margin:0 0 6px;letter-spacing:.08em}
+.feats p{margin:0;color:var(--ink);font-size:17px}
+.season{margin-top:30px;text-align:center;color:var(--muted);font-family:var(--ui);font-size:15px;letter-spacing:.06em}
+.season b{color:var(--gold);font-weight:500}
+.sec{margin-top:56px}.sec h2{font-size:22px;text-align:center;margin:0 0 24px;color:var(--ink)}
+.about{max-width:38em;margin:56px auto 0;text-align:center}
+.about h2{font-size:20px;color:var(--gold);letter-spacing:.12em}
+@media (max-width:760px){.lead{font-size:19px}.btn{font-size:16px;padding:13px 20px}.tag{font-size:12px}.shots{grid-template-columns:repeat(2,1fr)}.feats{grid-template-columns:1fr}.nav{gap:12px;font-size:14px}.brand span{display:none}}
+</style></head><body><header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="kidadam-logo.png" alt=""><span>KID ADAM STUDIOS</span></a><nav class="nav"><a href="index.html#games">Games</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
+<main class="wrap">
+<section class="hero"><img src="kidadam-logo.png" alt="Kid Adam Studios"><p>An independent game studio making hand-drawn games with a mystery at their heart.</p></section>
+<section id="games" class="sec"><h2>Our games</h2>
+<article class="game"><div class="bgimg"></div><div class="in">
+<img class="gl" src="blackout-logo.png" alt="Blackout Murder">
+<p class="tag">A VICTORIAN WHODUNIT · FREE ON IPHONE</p>
+<p class="lead">The lights went out. Someone used the dark to kill. Read the testimony, track every guest through the night, and name the killer before the lights come back on.</p>
+<div class="cta"><a class="btn gold" href="https://apps.apple.com/app/id6825057828"><img src="blackout-icon.jpg" alt="">Download on the App Store</a><a class="btn ghost" href="support.html">Support</a></div>
+<div class="shots"><img src="shot1.jpg" alt="The manor map, hour by hour" loading="lazy"><img src="shot2.jpg" alt="The lights go out" loading="lazy"><img src="shot3.jpg" alt="A suspect's testimony" loading="lazy"><img src="shot4.jpg" alt="Accusing the killer" loading="lazy"></div>
+<div class="feats">
+<div><h3>EVERY CASE IS FAIR</h3><p>One answer, always reachable by logic. No guessing, no luck.</p></div>
+<div><h3>A MANOR OF SECRETS</h3><p>Eighteen guests with their own voices, grudges and family ties. Anyone can be the killer.</p></div>
+<div><h3>A NEW CASE EVERY NIGHT</h3><p>Daily Challenges, streaks, and the Baker Street Files for the bravest detectives.</p></div>
+</div>
+<p class="season"><b>Season 1: The Ripper</b> out now · Season 2: The Moriarty Season, coming soon</p>
+</div></article></section>
+<section class="about"><h2>ABOUT THE STUDIO</h2><p>Kid Adam Studios is the independent studio of Adrian Frederick Adam Dayao. Every character, room and clue is hand-drawn. Say hello at <a href="mailto:kidadamdayao@gmail.com">kidadamdayao@gmail.com</a>.</p></section>
+</main><footer class="foot"><div class="wrap"><span>© 2026 Kid Adam Studios</span><span><a href="mailto:kidadamdayao@gmail.com">kidadamdayao@gmail.com</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></span></div></footer></body></html>
