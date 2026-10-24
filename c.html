@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Blackout Murder Challenge</title><meta name="description" content="A friend challenged you to solve a Blackout Murder case faster than they did."><link rel="icon" href="kidadam-logo.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@400;500&display=swap"><style>
+:root{--bg:#000;--panel:#15110d;--ink:#f1e6cf;--muted:#b9a684;--gold:#e0b25a;--gold2:#c4913c;--line:#3a2c1a;--wine:#9c1d25;
+--display:"Cinzel",Georgia,"Times New Roman",serif;--body:"EB Garamond",Georgia,"Times New Roman",serif;--ui:"Jost",system-ui,sans-serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.6}
+a{color:var(--gold)}a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.top{border-bottom:1px solid var(--line);background:#000}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:700;letter-spacing:.08em;font-size:17px}
+.brand img{width:42px;height:42px;border-radius:8px}
+.nav{display:flex;gap:18px;font-family:var(--ui);font-size:15px}.nav a{color:var(--muted);text-decoration:none}.nav a:hover{color:var(--gold)}
+.foot{border-top:1px solid var(--line);color:var(--muted);font-family:var(--ui);font-size:14px;padding:28px 0 40px;margin-top:64px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;font-family:var(--ui);font-weight:500;font-size:17px;text-decoration:none;padding:14px 26px;border-radius:999px}
+.btn.gold{background:linear-gradient(#f0c674,#d39a3e);color:#2a1608;box-shadow:0 0 0 1px #ffe2a8 inset}
+.btn.ghost{border:1px solid var(--gold2);color:var(--gold)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.03em;line-height:1.2;text-wrap:balance}
+</style><style>
+.sheet{max-width:620px;margin:40px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px clamp(18px,5vw,44px) 38px;text-align:center}
+.sheet .logo{width:min(260px,70%);height:auto;margin:0 auto 6px;display:block}
+.kicker{font-family:var(--ui);font-size:14px;letter-spacing:.14em;color:var(--muted);margin:10px 0 0;text-transform:uppercase}
+.sheet h1{font-size:clamp(28px,7vw,40px);margin:6px 0 4px}
+.time{font-family:var(--display);color:var(--gold);font-size:clamp(34px,9vw,48px);margin:4px 0 0}
+.sub{color:var(--muted);font-style:italic;margin:4px 0 22px}
+.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:clamp(28px,8vw,38px);letter-spacing:.12em;border:1px solid var(--gold2);border-radius:10px;padding:10px 18px;display:inline-block;user-select:all;color:var(--ink);background:#000}
+.steps{text-align:left;max-width:440px;margin:26px auto 0;padding-left:1.3em}.steps li{margin:8px 0}
+.row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px}
+button.btn{border:0;cursor:pointer}
+@media (max-width:760px){.brand span{display:none}}
+.note{font-family:var(--ui);font-size:14px;color:var(--muted);min-height:1.4em;margin:8px 0 0}
+</style></head><body><header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="kidadam-logo.png" alt=""><span>KID ADAM STUDIOS</span></a><nav class="nav"><a href="index.html#games">Games</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header><main class="wrap"><article class="sheet">
+<img class="logo" src="blackout-logo.png" alt="Blackout Murder">
+<div id="ok" hidden>
+<p class="kicker" id="case">Case</p>
+<h1>You've been challenged</h1>
+<p class="sub">Your friend found the killer in</p>
+<p class="time" id="time">0:00</p>
+<p class="sub" id="hints"></p>
+<div class="code" id="code">XXXX-XXXX</div>
+<p class="note" id="copied"></p>
+<div class="row"><button class="btn gold" id="copy" type="button">Copy the code</button><a class="btn ghost" href="https://apps.apple.com/app/id6825057828">Get Blackout Murder</a></div>
+<ol class="steps"><li>Get <b>Blackout Murder</b>, free on the App Store.</li><li>Open it and tap <b>Challenge</b> on the main menu.</li><li>Paste the code and play the exact same night.</li><li>Beat your friend's time. Hints add 30 seconds each.</li></ol>
+</div>
+<div id="bad" hidden>
+<h1>Challenge a friend</h1>
+<p class="sub">Solve any case in Blackout Murder, then tap <b>Challenge a Friend</b> to send them that exact night and your time to beat.</p>
+<p>If a friend sent you here, ask them for their challenge code: eight letters and numbers, like <b>6VQH-CCP2</b>.</p>
+<div class="row"><a class="btn gold" href="https://apps.apple.com/app/id6825057828">Get Blackout Murder</a></div>
+</div>
+</article></main><footer class="foot"><div class="wrap"><span>© 2026 Kid Adam Studios</span><span><a href="mailto:kidadamdayao@gmail.com">kidadamdayao@gmail.com</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></span></div></footer>
+<script>
+// Same code as the game (Game.challenge_decode): 40 bits = format 3 | payload 27 XOR mask | check 10.
+var A="0123456789ABCDEFGHJKMNPQRSTVWXYZ",MASK=0x5A3C7D1;
+function chk(p){var h=0;for(var i=0;i<27;i++){h=(h*31+((p>>i)&1)*17+i+7)%1021}return h}
+function decode(t){t=(t||"").toUpperCase().replace(/O/g,"0").replace(/[IL]/g,"1").replace(/[^0-9A-Z]/g,"");
+ if(t.length!==8)return null;var v=0;for(var i=0;i<8;i++){var k=A.indexOf(t[i]);if(k<0)return null;v=v*32+k}
+ if(Math.floor(v/Math.pow(2,37))!==1)return null;var p=(Math.floor(v/1024)%Math.pow(2,27))^MASK;if(chk(p)!==v%1024)return null;
+ var hints=p&3,secs=(p>>2)&8191,n=p>>17;if(n<1||secs<1)return null;return{code:t.slice(0,4)+"-"+t.slice(4),n:n,secs:secs,hints:hints}}
+var c=decode(new URLSearchParams(location.search).get("c"));
+if(c){document.getElementById("ok").hidden=false;
+ document.getElementById("case").textContent="Case "+c.n;
+ document.getElementById("time").textContent=Math.floor(c.secs/60)+":"+String(c.secs%60).padStart(2,"0");
+ document.getElementById("hints").textContent=c.hints?"with "+c.hints+" hint"+(c.hints>1?"s":"")+" (+"+(30*c.hints)+" seconds)":"with no hints";
+ document.getElementById("code").textContent=c.code;
+ document.getElementById("copy").onclick=function(){var n=document.getElementById("copied");
+  if(navigator.clipboard){navigator.clipboard.writeText(c.code).then(function(){n.textContent="Copied. Paste it in the game under Challenge."},function(){n.textContent="Press and hold the code to copy it."})}else{n.textContent="Press and hold the code to copy it."}};
+}else{document.getElementById("bad").hidden=false}
+</script></body></html>
